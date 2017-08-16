@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="bin\Release\net46\Abp.Zero.AspNetCore.pdb">
+    <None Include="bin\Release\net46\Abp.Zero.AspNetCore.pdb">
       <PackagePath>lib/net46/</PackagePath>
       <Pack>true</Pack>
     </None>
@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Abp.Zero\Abp.Zero.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net46' ">
